@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginPageComponent } from './auth/containers/login.page/login.page.component';
 
 const routes: Routes = [
+  { path: '', component: LoginPageComponent },
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
@@ -13,4 +15,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

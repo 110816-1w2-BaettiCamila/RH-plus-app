@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class requestContainer {
 
+  showFilters: boolean = true;
+
   constructor() { }
 
 }
